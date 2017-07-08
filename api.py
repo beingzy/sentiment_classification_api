@@ -34,6 +34,9 @@ api = Api(app)
 
 class GetSentiment(Resource):
 
+    def get(self):
+        return "API is on!"
+
     def put(self):
         text = request.form['text']
         pre_sentiment = get_sentiment_classification(text)
