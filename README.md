@@ -22,3 +22,7 @@ data_pkg = {'text': 'I am so excited to be able to use Pinterst everday to colle
 
 put(endpoint_url, data=data_pkg).json()
 ```
+
+### Deploy to Heroku
+Craete a heroku dyno, `heroku create`, and deploy the project, `git push heroku master`.
+Attach logging service `heroku addons:create papertrail`. To check the logging, `heroku addons:open papertrail`.
